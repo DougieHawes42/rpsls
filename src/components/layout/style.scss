@@ -1,0 +1,8 @@
+@import "../../display/style/variables.scss";
+
+.footer,
+.header {
+  max-height: $space_unit * 10;
+  min-height: $space_unit * 10;
+  padding: $y-padding-desktop $x-padding-desktop;
+}

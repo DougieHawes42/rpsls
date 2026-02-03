@@ -1,0 +1,27 @@
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font1;
+}
+
+.app {
+  background-blend-mode: screen;
+  background-color: rgba($color: #ffffff, $alpha: 0.7);
+  background-image: url("../media/background.jpg");
+  background-position: center;
+  background-size: cover;
+  max-height: 100vh;
+  min-height: 100vh;
+}

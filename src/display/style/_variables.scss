@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "roddenbury-italic";
+  src: url("../fonts/roddenbury/RoddenberryBoldItalic-q4ol.ttf");
+}
+@font-face {
+  font-family: "super-pixel";
+  src: url("../fonts/superpixel/SuperPixel-m2L8j.ttf");
+}
+
+// fonts
+$font1: "roddenbury-italic";
+$font3: "super-pixel";
+
+// spacing
+$space_unit: 7px;
+$x-padding-desktop: $space_unit * 10;
+$y-padding-desktop: $space_unit;

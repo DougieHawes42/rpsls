@@ -1,0 +1,7 @@
+@import "../../display/style/variables.scss";
+
+.route {
+  max-height: calc(100vh - $space_unit * 20);
+  min-height: calc(100vh - $space_unit * 20);
+  padding: $y-padding-desktop $x-padding-desktop;
+}
