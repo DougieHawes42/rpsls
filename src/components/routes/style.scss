@@ -1,1 +1,34 @@
 @import "../../display/style/variables.scss";
+
+.home {
+  .home-intro {
+    font-size: $space_unit * 6;
+    line-height: $space_unit * 6;
+  }
+  .home-play-button {
+    animation: fadePulse 1.5s infinite ease-in-out;
+    color: $colour3;
+    cursor: pointer;
+    font-family: $font3;
+    font-size: $space_unit * 6;
+    letter-spacing: 6px;
+    padding-top: $space_unit * 6;
+    text-shadow:
+      -2px -2px 0 $colour1,
+      2px -2px 0 $colour1,
+      -2px 2px 0 $colour1,
+      2px 2px 0 $colour1;
+  }
+}
+
+@keyframes fadePulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}

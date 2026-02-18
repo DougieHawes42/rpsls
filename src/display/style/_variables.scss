@@ -3,12 +3,22 @@
   src: url("../fonts/roddenbury/RoddenberryBoldItalic-q4ol.ttf");
 }
 @font-face {
+  font-family: "monospace";
+  src: url("../fonts/mono/SpaceMono-Regular.ttf");
+}
+@font-face {
   font-family: "super-pixel";
   src: url("../fonts/superpixel/SuperPixel-m2L8j.ttf");
 }
 
+// colours
+$colour1: #333;
+$colour2: purple;
+$colour3: lime;
+
 // fonts
 $font1: "roddenbury-italic";
+$font2: "monospace";
 $font3: "super-pixel";
 
 // spacing

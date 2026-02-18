@@ -1,4 +1,10 @@
+import { useState } from "react";
+
+import { MdMusicOff, MdMusicNote } from "react-icons/md";
+
 import "./display/style/style.scss";
+
+import Music from "./display/media/music/music.mp3";
 
 // components
 // layout
@@ -11,6 +17,8 @@ import About from "./components/routes/About";
 import { Route, Routes } from "react-router-dom";
 
 const App = () => {
+  const [musicPlaying, setMusicPlaying] = useState(true);
+
   return (
     <div className="app">
       <Header />
@@ -19,6 +27,16 @@ const App = () => {
         <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
+      {musicPlaying ? (
+        <div className="music-toggle" onClick={() => setMusicPlaying(false)}>
+          <MdMusicOff />
+          <audio src={Music} autoPlay loop />
+        </div>
+      ) : (
+        <div className="music-toggle" onClick={() => setMusicPlaying(true)}>
+          <MdMusicNote />
+        </div>
+      )}
     </div>
   );
 };

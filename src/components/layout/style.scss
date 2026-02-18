@@ -2,7 +2,42 @@
 
 .footer,
 .header {
-  max-height: $space_unit * 10;
-  min-height: $space_unit * 10;
   padding: $y-padding-desktop $x-padding-desktop;
+}
+
+.footer {
+  max-height: 10vh;
+  min-height: 10vh;
+}
+
+.header {
+  max-height: 25vh;
+  min-height: 25vh;
+  .header-head-container {
+    .header-head {
+      height: 90px;
+    }
+  }
+  .header-title {
+    margin: 0 auto;
+    width: 270px;
+    .header-title-initial {
+      color: $colour3;
+      font-family: $font1;
+      text-shadow:
+        -1px -1px 0 $colour1,
+        1px -1px 0 $colour1,
+        -1px 1px 0 $colour1,
+        1px 1px 0 $colour1;
+    }
+  }
+}
+
+.music-toggle {
+  bottom: $y-padding-desktop;
+  cursor: pointer;
+  font-size: $space_unit * 6;
+  position: absolute;
+  right: $x-padding-desktop;
+  z-index: 9999;
 }
