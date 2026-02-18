@@ -1,5 +1,54 @@
 @import "../../display/style/variables.scss";
 
+.game {
+  .game-grid {
+    display: grid;
+    grid-gap: $space_unit;
+    grid-template-columns: repeat(3, 100px);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    .game-grid-box {
+      background-color: $colour2;
+      border-radius: $space_unit;
+      cursor: pointer;
+      height: 100px;
+      border: 2px solid $colour3;
+      padding-top: $space_unit * 4;
+      transition:
+        0.3s ease-in-out background-color,
+        0.3s ease-in-out border-color;
+      * {
+        color: $colour4;
+        font-size: $space_unit * 6;
+      }
+    }
+    .game-grid-box:hover {
+      background-color: $colour3;
+      border: 2px solid $colour2;
+    }
+    .game-grid-box-choose {
+      padding-top: $space_unit;
+      * {
+        font-size: $space_unit * 6;
+      }
+      p {
+        font-size: $space_unit * 3;
+        line-height: $space_unit * 3;
+      }
+    }
+  }
+  .game-counter {
+    color: $colour3;
+    font-family: $font3;
+    font-size: $space_unit * 6;
+    text-shadow:
+      -2px -2px 0 $colour1,
+      2px -2px 0 $colour1,
+      -2px 2px 0 $colour1,
+      2px 2px 0 $colour1;
+  }
+}
+
 .home {
   .home-intro {
     font-size: $space_unit * 6;

@@ -6,12 +6,12 @@ import { Link1 } from "../utils/links";
 
 import SheldonHead from "../../display/media/images/sheldonHead.png";
 
-const Header = ({ gamePlaying }) => {
+const Header = ({ musicPlaying }) => {
   return (
     <header className="header">
       <div className="header-title-container">
         <div
-          className={`header-head-container ${gamePlaying && "header-head-container-moving"}`}
+          className={`header-head-container ${musicPlaying && "header-head-container-moving"}`}
         >
           <img className="header-head" src={SheldonHead} alt="" />
         </div>

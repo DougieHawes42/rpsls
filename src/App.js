@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+
 import { FaQuestion } from "react-icons/fa";
 import { MdMusicOff, MdMusicNote } from "react-icons/md";
 
@@ -19,23 +20,15 @@ import About from "./components/routes/About";
 import { Route, Routes } from "react-router-dom";
 
 const App = () => {
-  const [gamePlaying, setGamePlaying] = useState(false);
   const [musicPlaying, setMusicPlaying] = useState(false);
 
   return (
     <div className="app">
-      <Header gamePlaying={gamePlaying} />
+      <Header musicPlaying={musicPlaying} />
       <Routes>
         <Route
           path="/"
-          element={
-            <Home
-              onClick={() => {
-                setMusicPlaying(true);
-                setGamePlaying(true);
-              }}
-            />
-          }
+          element={<Home onClick={() => setMusicPlaying(true)} />}
         />
         <Route path="/game" element={<Game />} />
         <Route path="/about" element={<About />} />

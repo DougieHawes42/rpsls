@@ -21,7 +21,7 @@ h6 {
 
 .app {
   background-blend-mode: screen;
-  background-color: rgba($color: #ffffff, $alpha: 0.7);
+  background-color: rgba($color: $colour4, $alpha: 0.7);
   background-image: url("../media/images/background.jpg");
   background-position: center;
   background-size: cover;
