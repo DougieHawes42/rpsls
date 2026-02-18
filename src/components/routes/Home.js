@@ -1,14 +1,11 @@
-import { useState } from "react";
-
 import "./style.scss";
 
 // components
 // utils
 import { Route1 } from "../utils/routes";
+import { Link } from "react-router-dom";
 
-const Home = () => {
-  const [gamePlaying, setGamePlaying] = useState(false);
-
+const Home = ({ onClick }) => {
   const playQuotes = [
     "I have prepared myself mentally, physically, and intellectually. Commence the game.",
     "Before we begin, I’d like to note that I fully expect to win.",
@@ -20,18 +17,14 @@ const Home = () => {
 
   const content = (
     <div className="home">
-      {gamePlaying ? (
-        <>game</>
-      ) : (
-        <>
-          <p className="home-intro">
-            {playQuotes[Math.floor(Math.random() * playQuotes.length)]}
-          </p>
-          <p className="home-play-button" onClick={setGamePlaying}>
-            PLAY
-          </p>
-        </>
-      )}
+      <p className="home-intro">
+        {playQuotes[Math.floor(Math.random() * playQuotes.length)]}
+      </p>
+      <Link to="/game">
+        <p className="home-play-button" onClick={onClick}>
+          PLAY
+        </p>
+      </Link>
     </div>
   );
 

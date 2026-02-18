@@ -27,8 +27,17 @@ h6 {
   background-size: cover;
   max-height: 100vh;
   min-height: 100vh;
+  .about-link {
+    bottom: $space_unit * 10;
+    cursor: pointer;
+    font-size: $space_unit * 6;
+    position: absolute;
+    right: $x-padding-desktop;
+  }
   .music-player {
     bottom: $y-padding-desktop;
+    cursor: pointer;
+    font-size: $space_unit * 6;
     position: absolute;
     right: $x-padding-desktop;
   }
