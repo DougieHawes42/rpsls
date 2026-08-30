@@ -1,0 +1,46 @@
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+  color: #f8f8f8;
+  font-family: $font2;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font1;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.app {
+  background-image: url("../../assets/media/background.jpg");
+  background-position: center;
+  background-size: cover;
+  max-height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+  .instructions-link {
+    color: magenta;
+    cursor: pointer;
+    font-size: 21px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90%;
+
+    transition: 0.3s ease-in-out color;
+    &:hover {
+      color: #f8f8f8;
+    }
+  }
+}

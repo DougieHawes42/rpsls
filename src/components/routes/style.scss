@@ -1,0 +1,121 @@
+@import "../../assets/styles/variables.scss";
+
+.screen {
+  background: linear-gradient(
+    to bottom,
+    #161616 0%,
+    #222 21%,
+    #555 50%,
+    #222 79%,
+    #161616 100%
+  );
+  border: 6px solid magenta;
+  border-radius: 42px;
+  height: 70%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 900px;
+  overflow: hidden;
+  padding: 7px;
+  position: absolute;
+  text-align: center;
+  width: calc(100% - 14px);
+}
+
+.game {
+  .game-title {
+    font-size: 28px;
+    margin-bottom: 14px;
+  }
+  .choice-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 7px;
+    .choice {
+      background-color: rgba(magenta, 0.2);
+      cursor: pointer;
+      flex: 1 1 calc(33.333% - 14px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 100px;
+      min-height: 100px;
+
+      &:hover {
+        background-color: rgba(magenta, 0.4);
+      }
+
+      * {
+        font-size: 42px;
+      }
+    }
+  }
+  .round-result {
+    .round-result-text {
+      font-size: 35px;
+      margin: 7px 0;
+    }
+    .next-round-button {
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+      color: magenta;
+      cursor: pointer;
+      font-size: 21px;
+
+      transition: 0.3s ease-in-out color;
+
+      &:hover {
+        color: #f8f8f8;
+      }
+    }
+  }
+  .round {
+    font-size: 28px;
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.guide {
+  .guide-text {
+    max-height: 90%;
+    min-height: 90%;
+    margin: 7px;
+    overflow-y: scroll;
+  }
+  .guide-return-button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: magenta;
+    cursor: pointer;
+    font-size: 21px;
+
+    transition: 0.3s ease-in-out color;
+
+    &:hover {
+      color: #f8f8f8;
+    }
+  }
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  .home-contents {
+    margin-top: 210px;
+    .home-message {
+      font-size: 35px;
+    }
+    .home-button {
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+      color: magenta;
+      cursor: pointer;
+      font-size: 42px;
+    }
+  }
+}
