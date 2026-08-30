@@ -1,0 +1,173 @@
+# 🪨 Rock Paper Scissors Lizard Spock 🦎
+
+A modern take on the classic **Rock Paper Scissors** game, expanded with two additional choices: **Lizard** and **Spock**.
+
+Built as an interactive web game with animated UI, player feedback, and a simple, responsive design.
+
+## 🎮 How to Play
+
+Choose one of the five options:
+
+- 🪨 **Rock**
+- 📄 **Paper**
+- ✂️ **Scissors**
+- 🦎 **Lizard**
+- 🖖 **Spock**
+
+Each choice beats two other choices:
+
+| Choice      | Beats            |
+| ----------- | ---------------- |
+| 🪨 Rock     | Scissors, Lizard |
+| 📄 Paper    | Rock, Spock      |
+| ✂️ Scissors | Paper, Lizard    |
+| 🦎 Lizard   | Spock, Paper     |
+| 🖖 Spock    | Scissors, Rock   |
+
+The winner is determined once both the player and computer have selected their choices.
+
+### Example
+
+> Spock **vaporizes** Rock
+> Rock **crushes** Lizard
+> Lizard **eats** Paper
+> Paper **covers** Rock
+> Scissors **cuts** Paper
+
+And so on!
+
+## ✨ Features
+
+- 🎮 Five-choice Rock Paper Scissors game
+- 🤖 Computer-controlled opponent
+- 🏆 Win, lose, and draw detection
+- 📊 Score tracking
+- 🎬 Animated game transitions
+- 💫 Interactive UI feedback
+- 📱 Responsive layout
+- 🔄 Ability to play multiple rounds
+
+## 🛠️ Built With
+
+- **React**
+- **JavaScript**
+- **Framer Motion**
+- **SCSS / CSS**
+- **HTML**
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+You'll need **Node.js** and **npm** installed on your machine.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/rock-paper-scissors-lizard-spock.git
+```
+
+Navigate into the project:
+
+```bash
+cd rock-paper-scissors-lizard-spock
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm start
+```
+
+The game should now be running locally.
+
+## 📁 Project Structure
+
+A simplified overview of the project:
+
+```text
+src/
+├── components/
+│   ├── HomeScreen/
+│   ├── GameScreen/
+│   └── ResultsScreen/
+│
+├── assets/
+│
+├── App.js
+├── App.scss
+└── index.js
+```
+
+> The exact structure may vary depending on the current implementation.
+
+## 🎨 Animations
+
+The interface uses **Framer Motion** to create smooth transitions between game states.
+
+Animations include:
+
+- Elements fading and sliding into view
+- Scale/zoom effects
+- Staggered text animations
+- Button interactions
+- Game result transitions
+
+The goal is to make each round feel responsive and engaging rather than simply presenting the result immediately.
+
+## 🧠 Game Logic
+
+The game follows the rules popularised by **The Big Bang Theory**:
+
+```text
+Scissors cuts Paper
+Paper covers Rock
+Rock crushes Lizard
+Lizard poisons Spock
+Spock smashes Scissors
+Scissors decapitates Lizard
+Lizard eats Paper
+Paper disproves Spock
+Spock vaporizes Rock
+Rock crushes Scissors
+```
+
+Each round compares the player's selection against a randomly generated computer selection.
+
+## 📸 Screenshots
+
+_Add screenshots or a GIF of the game here._
+
+```text
+Coming soon...
+```
+
+## 🔮 Future Improvements
+
+Potential additions include:
+
+- [ ] Sound effects
+- [ ] More elaborate win/loss animations
+- [ ] Difficulty levels
+- [ ] Best-of-3 / Best-of-5 game modes
+- [ ] Persistent high scores
+- [ ] Improved mobile interactions
+- [ ] Accessibility improvements
+- [ ] Custom player names
+- [ ] Game statistics
+
+## 📄 License
+
+This project is open source and available under the **MIT License**.
+
+---
+
+Made with ☕, JavaScript, and questionable amounts of Rock vs Spock.
